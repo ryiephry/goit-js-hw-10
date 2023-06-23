@@ -20,7 +20,7 @@ function load() {
          console.log(data)
             di.innerHTML = `
              <ul>
-          <li><img src="${data.url}"></li>
+          <li><img src=${data} alt=${"thisisacat"}></li>
             </ul> 
             ` 
         })
