@@ -20,7 +20,7 @@ function load() {
           //  console.log(data.url)
             di.innerHTML = `
              <ul>
-          <li><img href="${data.url.toString()}"></li>
+          <li><img src="${data.url.toString()}"></li>
             </ul> `
             
         })
