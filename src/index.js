@@ -33,8 +33,20 @@ fetch(url, {
             option.value = i;
             option.innerHTML = `${breed.name}`;
             selectEl.appendChild(option);
+            console.log(breed.name)
         }
+
+        showBreedImage(0)
     })
+       .catch(function(error) {
+   console.log(error);
+   
+    });
+function showBreedImage(index)
+{ 
+  document.getElementById("breed_image").src= storedBreeds[index].image.url;
+}
+
 // need to set select.breed-select.value = to id of breed
 
 
