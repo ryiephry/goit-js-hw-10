@@ -1,6 +1,7 @@
 // import axios from "axios";
 // axios.defaults.headers.common["x-api-key"] = "live_JkIDDOSMLEOX7RxnSCknMTfyPGIScNdHrVgoxdX9KjEQULxovwvDQAbEsCBDOyHU";
 
+
 const url = `https://api.thecatapi.com/v1/breeds`;
 const api_key = "live_JkIDDOSMLEOX7RxnSCknMTfyPGIScNdHrVgoxdX9KjEQULxovwvDQAbEsCBDOyHU"
 let storedBreeds = []
@@ -13,7 +14,7 @@ let storedBreeds = []
  })
 .then((data) => {
    
-   //filter to only include those with an `image` object
+
    data = data.filter(img=> img.image?.url!=null)
    
   storedBreeds = data;
@@ -22,16 +23,15 @@ let storedBreeds = []
     const breed = storedBreeds[i];
     let option = document.createElement('option');
      
-     //skip any breeds that don't have an image
+   
      if(!breed.image)continue
      
-    //use the current array index
+   
     option.value = i;
     option.innerHTML = `${breed.name}`;
     document.querySelector('.breed-select').appendChild(option);
     
     }
-   //show the first breed by default
    showBreedImage(0)
 })
 .catch(function(error) {
