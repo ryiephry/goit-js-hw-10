@@ -26,21 +26,21 @@
   background-size: cover;
   background-position: center;
 }
-*{
-  display:flex;
+select {
+  display: flex;
   justify-content: center;
 }
-body {
-  display :block;
-}
 .loader {
- 
+  display: flex;
+  justify-content: center;
 }
 .error {
- 
+  display: flex;
+  justify-content: center;
 }
 .cat-info {
-  
+  display: flex;
+  justify-content: center;
 
   #breed_image {
       max-width: 40%;
