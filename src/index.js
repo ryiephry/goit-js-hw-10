@@ -37,7 +37,7 @@ fetch(url, { headers: {
         }
 
         showBreedImage(0);
-      //  showBreedImage(option.value)
+        showBreedImage(selectEl.value)
     })
        .catch(function(error) {
               console.log(error);
