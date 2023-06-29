@@ -36,10 +36,11 @@ fetch(url, { headers: {
             selectEl.appendChild(option);
            // console.log(breed.name)
             
-            showBreedImage(i)
+            
         }
-
+s
         showBreedImage(0);
+        showBreedImage(option.value)
     })
        .catch(function(error) {
               console.log(error);
