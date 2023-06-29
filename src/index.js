@@ -17,14 +17,15 @@ fetch(url, {
         return response.json();
     })
     .then((data) => {
-        console.log(data)//.name
+       
         
-        data = data.filter(img => img.image?.url != null)
+        data = data.filter(img => img.image?.url != null);
         
-        storedBreeds = data
-
+        storedBreeds = data;
+        console.log(storedBreeds)
     
         for (let i = 0; i < storedBreeds.length; i++) {
+
             const breed = storedBreeds[i];
             let option = document.createElement('option');
      
@@ -46,10 +47,10 @@ fetch(url, {
     });
 function showBreedImage(index)
 { 
-  document.getElementById("breed_image").src = storedBreeds[index].image.url;
+    document.getElementById("breed_image").src = storedBreeds[index].image.url;
+    document.querySelector(".loader").textContent= storedBreeds[index].temperament
 }
 
-// need to set select.breed-select.value = to id of breed
 
 
 
