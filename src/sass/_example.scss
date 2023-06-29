@@ -26,18 +26,22 @@
   background-size: cover;
   background-position: center;
 }
-
-.loader {
+*{
   display:flex;
   justify-content: center;
+}
+.loader {
+ 
 }
 .error {
-  display: flex;
-  justify-content: center;
+ 
 }
-#breed_image {
-  display:flex;
-  justify-content:center;
-  max-width: 40%;
-  height: auto;
+.cat-info {
+  
+
+  #breed_image {
+      max-width: 40%;
+      height: auto;
+      display:block
+    }
 }
