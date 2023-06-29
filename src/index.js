@@ -33,12 +33,9 @@ fetch(url, { headers: {
             //use the current array index
             option.value = i;
             option.innerHTML = `${breed.name}`;
-            selectEl.appendChild(option);
-           // console.log(breed.name)
-            
-            
+            selectEl.appendChild(option);                    
         }
-s
+
         showBreedImage(0);
       //  showBreedImage(option.value)
     })
@@ -48,10 +45,5 @@ s
        });
     
 function showBreedImage(index){ 
-
     document.getElementById("breed_image").src = storedBreeds[index].image.url;
 }
-
-
-
-
