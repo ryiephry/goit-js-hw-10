@@ -19,6 +19,8 @@ fetch(url, {
     .then((data) => {
         console.log(data)//.name
         
+        data = data.filter(img => img.image?.url != null)
+        
         storedBreeds = data
 
     
@@ -44,7 +46,7 @@ fetch(url, {
     });
 function showBreedImage(index)
 { 
-  document.getElementById("breed_image").src= storedBreeds[index].image.url;
+  document.getElementById("breed_image").src = storedBreeds[index].image.url;
 }
 
 // need to set select.breed-select.value = to id of breed
