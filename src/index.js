@@ -8,9 +8,8 @@ console.log(selectEl);
 let storedBreeds = [];
 
 
-fetch(url, {
-    headers: {
-        "myApiKey": myApiKey
+fetch(url, { headers: {
+        'x-api-key' : myApiKey
     }
 })
     .then((response) => {
@@ -39,7 +38,7 @@ fetch(url, {
             console.log(breed.name)
         }
 
-        showBreedImage(0)
+        showBreedImage(0);
     })
        .catch(function(error) {
    console.log(error);
@@ -47,6 +46,7 @@ fetch(url, {
     });
 function showBreedImage(index)
 { 
+    console.log(index)
     document.getElementById("breed_image").src = storedBreeds[index].image.url;
     document.querySelector(".loader").textContent= storedBreeds[index].temperament
 }
