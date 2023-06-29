@@ -13,14 +13,14 @@ fetch(url, { headers: {
     .then((response) => {
         return response.json();
     })
-    
+
     .then((data) => {
        
         
         data = data.filter(img => img.image?.url != null);
         
         storedBreeds = data;
-       // console.log(storedBreeds)
+        console.log(storedBreeds)
     
         for (let i = 0; i < storedBreeds.length; i++) {
 
@@ -34,7 +34,7 @@ fetch(url, { headers: {
             option.value = i;
             option.innerHTML = `${breed.name}`;
             selectEl.appendChild(option);
-            console.log(breed.name)
+           // console.log(breed.name)
         }
 
         showBreedImage(0);
