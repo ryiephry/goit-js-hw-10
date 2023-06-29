@@ -35,12 +35,14 @@ fetch(url, { headers: {
             option.innerHTML = `${breed.name}`;
             selectEl.appendChild(option);
            // console.log(breed.name)
+            
+            showBreedImage(i)
         }
 
         showBreedImage(0);
     })
        .catch(function(error) {
-   console.log(error);
+              console.log(error);
    
        });
     
