@@ -29,25 +29,34 @@
 select {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 30px  auto ;
 }
 .loader {
   display: flex;
   justify-content: center;
 }
 .error {
+  display: none;
+}
+.cat-info {
+  .breed-image {
+      max-width: 20%;
+      height: auto;
+      display:block;
+      margin: 20px auto;
+    }
+}
+.errorHandle {
   display: flex;
   justify-content: center;
 }
-.cat-info {
-  display: flex;
+.nameOfCat {
+  display:flex;
   justify-content: center;
-
-  #breed_image {
-      max-width: 40%;
-      height: auto;
-      display:block
-    }
+}
+.infoOnCat {
+  display: flex; 
+  justify-content: center;
+  max-width:600px;
+  margin: 15px auto; 
 }
